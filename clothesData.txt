@@ -1,0 +1,5 @@
+1,T-Shirt,white cotton t-shirt,Polo,M,New,199.99,item1.jpg
+2,Melton Coat,biege melton coat,Exact,L,New,499.99,item2.jpg
+3,Jacket,Barn jacket,Exact,XL,New,699.99,item3.jpg
+4,jacket,Melton PU Baseball Jacket,Exact,42,New,399.99,item4.jpg
+5,Top,Girls High Neck Top,foschini,One size,New,149.99,item5.jpg
