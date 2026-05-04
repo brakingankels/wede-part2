@@ -1,0 +1,5 @@
+Marty McFly,MartyMc@gmail.com,McFly,29ef52e7563626a96cea7f4b4085c124
+Jane Smith,jane@gmail.com,jane,5f4dcc3b5aa765d61d8327deb882cf99
+Bob Johnson,bob@gmail.com,bobjohnson,e99a18c428cb38d5f260853678922e03
+Alice Brown,alice@gmail.com,alicebrown,7c6a180b36896a0a8c02787eeafb0e4c
+Charlie White,charlie@gmail.com,charliewhite,6cb75f652a9b52798eb6cf2201057c73
