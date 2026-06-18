@@ -3,6 +3,8 @@
 <?php
 include 'DBConn.php';
 session_start();
+include 'nav.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];

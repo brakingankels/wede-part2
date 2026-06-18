@@ -2,6 +2,8 @@
 <?php
 include 'DBConn.php';
 session_start();
+include 'nav.php';
+
 
 // Check if the user is logged in
 if(!isset($_SESSION['user'])){
@@ -20,6 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $size = trim($_POST['size']);
     $condition = trim($_POST['condition']);
     $price = trim($_POST['price']);
+    $image = trim($_POST['image']);
 
     // Checking if the values are empty
     if(empty($title) || empty($description) || empty($brand) || empty($size) || empty($condition) || empty($price)){
@@ -28,8 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $seller_id = $_SESSION['user']['user_id'];
    // Sql statement to insert item into tblClothes 
-    $stmt = $conn->prepare("INSERT INTO tblClothes (seller_id, title, description, brand, size, `condition`, price) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("isssssd", $seller_id, $title, $description, $brand, $size, $condition, $price);
+    $stmt = $conn->prepare("INSERT INTO tblClothes (seller_id, title, description, brand, size, `condition`, price, image) VALUES (?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("isssssd", $seller_id, $title, $description, $brand, $size, $condition, $price, $image);
 
     if($stmt->execute()){
         echo "<p style='color:green;'>Item added successfully!</p>";

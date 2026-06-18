@@ -57,8 +57,9 @@ if($result->num_rows === 0){
     <td><?php echo htmlspecialchars($row['seller_name']); ?></td>
     <td>
         <?php if(isset($_SESSION['user'])): ?>
-            <a href="orderItem.php?id=<?php echo $row['item_id']; ?>">Order</a>
-        <?php else: ?>
+            <a href="addToCart.php?id=<?php echo $row['item_id']; ?>">
+                Add To Cart
+            </a>
             <a href="login.php">Login to order</a>
         <?php endif; ?>
     </td>
