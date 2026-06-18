@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $seller_id = $_SESSION['user']['user_id'];
    // Sql statement to insert item into tblClothes 
     $stmt = $conn->prepare("INSERT INTO tblClothes (seller_id, title, description, brand, size, `condition`, price, image) VALUES (?,?,?,?,?,?,?,?)");
-    $stmt->bind_param("isssssd", $seller_id, $title, $description, $brand, $size, $condition, $price, $image);
+    $stmt->bind_param("isssssds", $seller_id, $title, $description, $brand, $size, $condition, $price, $image);
 
     if($stmt->execute()){
         echo "<p style='color:green;'>Item added successfully!</p>";
