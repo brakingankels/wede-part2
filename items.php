@@ -4,6 +4,7 @@
 // including database connection
 include 'DBConn.php';
 session_start();
+include 'nav.php';
 
 // fetching all available items with seller information
 $result = $conn->query("SELECT c.*, u.fullname AS seller_name FROM tblClothes c JOIN tblUser u ON c.seller_id = u.user_id WHERE c.status='available'");

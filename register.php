@@ -2,6 +2,7 @@
 
 <?php
 include 'DBConn.php';
+include 'nav.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fullname = $_POST['fullname'];

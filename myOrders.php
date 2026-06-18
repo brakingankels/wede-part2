@@ -4,6 +4,7 @@
 
 include 'DBConn.php';
 session_start();
+include 'nav.php';
 
 if(!isset($_SESSION['user'])){
     die("Please login.");

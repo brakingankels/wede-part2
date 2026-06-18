@@ -4,6 +4,7 @@
 
 include 'DBConn.php';
 session_start();
+include 'nav.php';
 
 if(!isset($_SESSION['admin'])){
     die("Access denied.");

@@ -1,6 +1,7 @@
 <?php
 
 include 'DBConn.php';
+include 'nav.php';
 
 $id = intval($_GET['id']);
 

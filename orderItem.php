@@ -4,6 +4,7 @@
 // Include the database connection
 include 'DBConn.php';
 session_start();
+include 'nav.php';
 
 // Check if user is logged in
 if(!isset($_SESSION['user'])){

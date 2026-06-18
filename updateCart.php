@@ -1,6 +1,7 @@
 <?php
 
 include 'DBConn.php';
+include 'nav.php';
 
 $cart_id = intval($_POST['cart_id']);
 $quantity = intval($_POST['quantity']);
